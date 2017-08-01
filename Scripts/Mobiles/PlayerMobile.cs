@@ -4074,15 +4074,11 @@ namespace Server.Mobiles
 		public List<Mobile> PermaFlags { get { return m_PermaFlags; } }
 
 		//pete modification begin - This will show the luck bonus of TenthAnniversarySculpture, however players need to close, re-open their status window, still need to fix auto update
-		
-		//public override int Luck { get { return AosAttributes.GetValue(this, AosAttribute.Luck); } }
-		// We want luck to also include the TenthAnniversarySculpture and FountainOfFortune		
-		public override int Luck { get { return AosAttributes.GetValue(this, AosAttribute.Luck) + TenthAnniversarySculpture.GetLuckBonus(this) + FountainOfFortune.GetLuckBonus(this); } }
 
-        //public int RealLuck { get { return Luck + TenthAnniversarySculpture.GetLuckBonus(this) + FountainOfFortune.GetLuckBonus(this); } }
-		// we want RealLuck to just return Luck
-		public int RealLuck { get { return Luck; } }
-		// end pete modications
+		public override int Luck { get { return AosAttributes.GetValue(this, AosAttribute.Luck) + TenthAnniversarySculpture.GetLuckBonus(this); } }
+
+        public int RealLuck { get { return Luck + FountainOfFortune.GetLuckBonus(this); } }
+
 		public override bool IsHarmfulCriminal(IDamageable damageable)
 		{
             Mobile target = damageable as Mobile;
