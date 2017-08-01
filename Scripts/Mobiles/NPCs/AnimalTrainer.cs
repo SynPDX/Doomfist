@@ -4,7 +4,6 @@
 // **********
 #endregion
 
-testedit
 
 #region References
 using System;
