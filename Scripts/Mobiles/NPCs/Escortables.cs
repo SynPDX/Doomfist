@@ -714,13 +714,14 @@ namespace Server.Engines.Quests
         };
         private int m_Quest;
         public NewHavenEscortable()
-            : base()
+            : this(Utility.RandomMinMax(0, 11))
         { 
         }
 
-        public NewHavenEscortable(Serial serial)
-            : base(serial)
+        public NewHavenEscortable(int quest)
+            : base()
         {
+			m_Quest = quest;
         }
 
         public override Type[] Quests
