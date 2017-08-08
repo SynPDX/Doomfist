@@ -297,7 +297,7 @@ namespace Server.Menus.Questions
 
                     Map destMap;
                     if (this.m_Mobile.Map == Map.Trammel)
-                        destMap = Map.Trammel;
+                        destMap = Map.Felucca;
                     else if (this.m_Mobile.Map == Map.Felucca)
                         destMap = Map.Felucca;
                     else if (m_Mobile.Map == Map.Internal)
