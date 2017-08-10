@@ -47,10 +47,10 @@ namespace Server.Engines.PlayerDonation
 		
 		private static string
 			DatabaseDriver = "{MySQL ODBC 5.1 Driver}",
-			DatabaseServer = "a2ss26.a2hosting.com",	// your MySQL database hostname
-			DatabaseName = "bitmccom_donation",			// the database name of your donation store db
-			DatabaseUserID = "bitmccom_rcuo",				// username for your MySQL database access
-			DatabasePassword = "Xir01tic";	// password
+			DatabaseServer = "redacted",	// your MySQL database hostname
+			DatabaseName = "redacted",			// the database name of your donation store db
+			DatabaseUserID = "redacted",				// username for your MySQL database access
+			DatabasePassword = "redacted";	// password
 
 		static string ConnectionString = String.Format( "driver={0};server={1};database={2};uid={3};pwd={4}",
 			DatabaseDriver, DatabaseServer, DatabaseName, DatabaseUserID, DatabasePassword );
