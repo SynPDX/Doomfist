@@ -2122,7 +2122,7 @@ namespace Server.Mobiles
                     list.Add(new Server.Engines.VendorSearhing.SearchVendors(this));
                 }
 
-                if (Core.SA)
+                if (Core.ML)
                 {
                     list.Add(new TitlesMenuEntry(this));
 
