@@ -95,6 +95,9 @@ namespace Server.Guilds
             }
 
             AddBackground(445, 370, 100, 26, 0x2486);
+			this.AddCheck(65, 370, 0xD2, 0xD3, this.player.DisplayGuildTitle, 0); //Show Guild Title added as this belongs for patch 59
+			this.AddBackground(450, 370, 100, 26, 0x2486); //Show Guild Title added as this belongs for patch 59
+			this.AddHtmlLocalized(95, 370, 150, 26, 1063085, 0x0, false, false); //Show Guild Title added as this belongs for patch 59
             AddButton(447, 375, 0x845, 0x846, 7, GumpButtonType.Reply, 0);
             AddHtmlLocalized(472, 373, 60, 26, 3006115, (this.m_IsResigning) ? 0x5000 : 0, false, false); // Resign
         }
